@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="40dp"
     android:gravity="center"
     tools:context=".HomeFragment">
 
@@ -18,10 +19,26 @@
     <Button
         android:layout_marginTop="50dp"
         android:id="@+id/btn_crud"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/black"
         android:text="CRUD"/>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/btn_teste"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Analytics"/>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/btn_storage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Storage"/>
 
 
 

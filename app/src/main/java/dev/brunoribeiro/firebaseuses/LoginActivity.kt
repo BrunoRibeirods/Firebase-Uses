@@ -116,7 +116,7 @@ class LoginActivity : AppCompatActivity() {
 
     private fun updateUI(user: FirebaseUser?) {
         if (user != null) {
-            callMain(user.email.toString())
+            callMain(user.displayName.toString())
         } else {
             Log.e(TAG, "Nenhuma conta conectada")
         }

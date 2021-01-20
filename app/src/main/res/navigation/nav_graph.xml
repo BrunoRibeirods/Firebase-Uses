@@ -14,10 +14,26 @@
         <action
             android:id="@+id/action_homeFragment_to_crudFragment"
             app:destination="@id/crudFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_crashFragment"
+            app:destination="@id/crashFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_storageFragment"
+            app:destination="@id/storageFragment" />
     </fragment>
     <fragment
         android:id="@+id/crudFragment"
         android:name="dev.brunoribeiro.firebaseuses.CrudFragment"
         android:label="fragment_crud"
         tools:layout="@layout/fragment_crud" />
+    <fragment
+        android:id="@+id/crashFragment"
+        android:name="dev.brunoribeiro.firebaseuses.CrashFragment"
+        android:label="fragment_crash"
+        tools:layout="@layout/fragment_crash" />
+    <fragment
+        android:id="@+id/storageFragment"
+        android:name="dev.brunoribeiro.firebaseuses.StorageFragment"
+        android:label="fragment_storage"
+        tools:layout="@layout/fragment_storage" />
 </navigation>

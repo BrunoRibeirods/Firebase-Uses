@@ -34,6 +34,15 @@ class HomeFragment : Fragment() {
             view.findNavController().navigate(R.id.action_homeFragment_to_crudFragment)
         }
 
+        binding.btnTeste.setOnClickListener {
+            view.findNavController().navigate(R.id.action_homeFragment_to_crashFragment)
+        }
+
+        binding.btnStorage.setOnClickListener {
+            view.findNavController().navigate(R.id.action_homeFragment_to_storageFragment)
+        }
+
+
         firebaseAnalytics = FirebaseAnalytics.getInstance(view.context)
         firebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_ITEM){
             param(FirebaseAnalytics.Param.ITEM_NAME, "Caneta")
