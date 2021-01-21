@@ -20,6 +20,9 @@
         <action
             android:id="@+id/action_homeFragment_to_storageFragment"
             app:destination="@id/storageFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_firestoreFragment"
+            app:destination="@id/firestoreFragment" />
     </fragment>
     <fragment
         android:id="@+id/crudFragment"
@@ -36,4 +39,9 @@
         android:name="dev.brunoribeiro.firebaseuses.StorageFragment"
         android:label="fragment_storage"
         tools:layout="@layout/fragment_storage" />
+    <fragment
+        android:id="@+id/firestoreFragment"
+        android:name="dev.brunoribeiro.firebaseuses.FirestoreFragment"
+        android:label="fragment_firestore"
+        tools:layout="@layout/fragment_firestore" />
 </navigation>

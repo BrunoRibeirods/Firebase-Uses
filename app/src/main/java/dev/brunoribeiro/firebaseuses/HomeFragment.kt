@@ -42,6 +42,10 @@ class HomeFragment : Fragment() {
             view.findNavController().navigate(R.id.action_homeFragment_to_storageFragment)
         }
 
+        binding.btnFirestore.setOnClickListener {
+            view.findNavController().navigate(R.id.action_homeFragment_to_firestoreFragment)
+        }
+
 
         firebaseAnalytics = FirebaseAnalytics.getInstance(view.context)
         firebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_ITEM){
