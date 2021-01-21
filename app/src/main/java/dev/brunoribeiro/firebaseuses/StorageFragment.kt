@@ -74,7 +74,7 @@ class StorageFragment : Fragment() {
 
                     context?.let {
                         Glide.with(it)
-                            .load(url)
+                            .load(downloadUri.toString())
                             .into(binding.ivStorage)
                     }
                 }
